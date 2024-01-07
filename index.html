@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    * {
+        background-color: rgb(3, 3, 49);
+    }
+    h1 {
+        text-align: center;
+        color: aliceblue;
+        font-size: x-large;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+    
+    }
+    
+     #box{
+        padding-top: 10px;
+        text-align: center;
+        font-size: small;
+        color: aliceblue;
+        
+        
+    
+    }
+    main{
+        margin-top: 15%;
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 350px;
+    }
+    
+    label {
+        
+        color: aliceblue;
+    
+    }
+    input {
+        text-align: left;
+        margin-top: 5px;
+        height: 20px;
+        background-color: rgb(34, 34, 95);
+    }
+    
+    #button {
+        padding-left: 40%;
+        
+    }    
+    #select {
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Registration Form
+        </h1>
+        <div id="box">Please fill out this form with the required information</div>
+
+    </header>
+    
+    <main>
+        <form  method="post">
+            <label for="name">Enter Your Full Name:</label><br>
+            <input  type="text" type="color" id="name" name="name"  style="width: 100%;"><br><br>
+            <label for="name">Enter Your Last Name:</label><br>
+            <input type="text"style="width: 100%;"><br><br>
+            <label for="name">Enter Your Email:</label><br>
+            <input type="email"style="width: 100%;"><br><br>
+            <label for="name">Create a New Password:</label><br>
+            <input type="password"style="width: 100%;" maxlength="6"><br>
+            <hr width="100%" size="1"><br>
+            <input type="radio" id="personal account" name="information" style="padding-left: 10%;">
+            <span id="personal account" style="color: aliceblue;">Personal account</span><br>
+            <input type="radio" id="bussiness account" name="information" style="padding-left: 10%;">
+            <span id="bussiness account" style="color: aliceblue;">Bussiness account</span><br>
+            <input type="checkbox" id="checkbox" name="information" style="padding-left: 10%;">
+            <span id="checkbox" style="color: aliceblue;">I accept the<u> term and condition</u> </span><br><br>
+            <hr width="100%" size="1"><br>
+            <label style="color: aliceblue;" for="myfile">Upload a profile picture: </label><br>
+             <input type="file" id="myfile" name="myfile" style="width: 100%;"><br><br>
+            <label>Input your age (Years):</label><br>
+            <input type="text"style="width: 100%;"><br><br>
+            <label>How did you hear about us ?</label><br>
+            <select  id="select"  style=" width: 100%">
+                <option value="select one">select one</option>
+                <option value="social media">social media</option>
+                <option value="radio">radio</option>
+                <option value="TV">TV</option>
+                <option value="other">other</option>
+              </select>
+              <br><br>
+            <label>Provide a bio:</label><br>
+            <input type="text"style="width: 100%;height: 40px;"value ="I like coding on the beach....."  ><br><br><br>
+            <div id="button"><button style="color: aliceblue;background-color: rgb(3, 3, 49); border-color: aliceblue; text-align: center; ">Submit</button>
+            </div>
+        </form>
+        
+        
+            
+        
+        
+    </main>
+</body>
+</html>
